@@ -20,13 +20,6 @@ return `<div class="gallery__item">
         gallery.insertAdjacentHTML(`beforeend`, images.join(""))
 
 
-
-        gallery.addEventListener("click",(event) => {
-            event.preventDefault();
-            const lightbox = basicLightbox.create(`<img src="${event.target.dataset.source}" alt="${event.target.alt}" />>`);
-            lightbox.show();}
-             )
-             
 new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
